@@ -1,7 +1,10 @@
 // src/App.js
 // import './App.css';
 
+// JSX - Javascript and XML **
+
 function App() {
+  const name = "Sam";
 
   return (
     <div className="App">
