@@ -41,9 +41,13 @@ function App() {
 
   const increaseCount = () => {
     // setCount(count+1);
-    setCount((prev) => prev + 4 );
+    setCount((prev) => prev + 1 );
 
     
+  }
+
+  const decreaseCount = () => {
+    setCount((prev) => prev -1)
   }
 
 
@@ -59,6 +63,7 @@ function App() {
 
       <h1>Count: {count} </h1>
       <button onClick={increaseCount}>Add</button>
+      <button onClick={decreaseCount}>Remove</button>
     </>
    
   );
