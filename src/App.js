@@ -7,14 +7,14 @@ function App() {
   const [counter, setCounter] = useState(0); // 0 is the initial value 
   console.log(counter);
 
-  const [role, setRole] = useState("Developer");
+  const [role, setRole] = useState("Developer"); // 'Developer' is the initial value
  
 
   // let role = "Developer";
 
   const changeColor = () => {
     // role = "Architect"
-    setRole("Architect");
+    setRole("Architect"); // 'Architect' is the new value
     // console.log(role)
   }
 
