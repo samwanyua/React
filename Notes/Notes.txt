@@ -24,5 +24,9 @@ Commonly used react hooks:
 - useLayoutEffect
 - custom hooks
 
+useState
+- creates a 'state variable' which helps us to track the state in components and updates
+in the user interface when the state changes.
+
 
 

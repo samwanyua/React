@@ -1,16 +1,27 @@
 // src/App.js
 // import './App.css';
+import { useState } from "react";
 
-// JSX - Javascript and XML **
 
 function App() {
-  const name = "Samuel";
+  const counter = useState(0) // 0 is the initial value 
+  console.log(counter)
+
+
+  let role = "Developer";
+
+  const changeColor = () => {
+    role = "Architect"
+    // console.log(role)
+  }
+
 
   return (
-    <div className="App">
-      <h4>Welcome</h4>
-      <p>Hello, {name}</p>
-    </div>
+    <>
+      <h1>Hi, I am a Software {role}</h1>
+      <button onClick={changeColor}>Hire me!</button>
+    </>
+   
   );
 }
 
