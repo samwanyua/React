@@ -37,6 +37,12 @@ function App() {
   }
 
 
+  const [count, setCount] = useState(0);
+
+  const increaseCount = () => {
+    setCount(count+1);
+  }
+
 
 
   return (
@@ -47,6 +53,9 @@ function App() {
       <h1>My {car.brand} </h1>
       <h3>It's a {car.color} {car.model} {car.year},straight from Germany</h3>
       <button onClick={changeCarColor}>Buy</button>
+
+      <h1>Count: {count} </h1>
+      <button onClick={increaseCount}>Add</button>
     </>
    
   );
