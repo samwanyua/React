@@ -30,6 +30,12 @@ function App() {
     color: "Silver"
   });
 
+  const changeCarColor = () =>{
+    setCar((prev) => {
+      return {...prev, color: "blue"}
+    })
+  }
+
 
 
 
@@ -40,6 +46,7 @@ function App() {
 
       <h1>My {car.brand} </h1>
       <h3>It's a {car.color} {car.model} {car.year},straight from Germany</h3>
+      <button onClick={changeCarColor}>Buy</button>
     </>
    
   );
