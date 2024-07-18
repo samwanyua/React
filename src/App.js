@@ -4,11 +4,12 @@
 // JSX - Javascript and XML **
 
 function App() {
-  const name = "Sam";
+  const name = "Samuel";
 
   return (
     <div className="App">
-      <h4>Welcome Sam</h4>
+      <h4>Welcome</h4>
+      <p>Hello, {name}</p>
     </div>
   );
 }
