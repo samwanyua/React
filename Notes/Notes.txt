@@ -1,0 +1,28 @@
+React Hooks
+- Hooks are special functions that allows us to use state and other React
+  features in functional components
+- In react 16, we can now use state management and other react features without 
+ writing class components
+- Earlier, we create react app using functional components, there was no access to the 
+state management and lifecyle methods
+- To access these features we had to use class components
+
+- simply hooks are functions that make functional components work like class components
+
+Benefit of React Hooks
+- Simplify code
+- Improves readability, reusability and overall perfomance of the application
+
+Commonly used react hooks:
+- useState
+- useEffect
+- useRef
+- useMemo
+- useCallback
+- useContext
+- useReducer
+- useLayoutEffect
+- custom hooks
+
+
+
