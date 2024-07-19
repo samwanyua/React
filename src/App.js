@@ -1,6 +1,6 @@
 // src/App.js
 // import './App.css';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 
 function App() {
@@ -77,16 +77,23 @@ function App() {
 
 
   // whenever count changes it will again execute the callback function
-  useEffect(() => {
-    setTimeout(()=>{
-      setCout((cout) => cout+1)
-    },2000)
-  },[cout,name])    
+  // useEffect(() => {
+  //   setTimeout(()=>{
+  //     setCout((cout) => cout+1)
+  //   },2000)
+  // },[cout,name])    
 
 
   // useRef
-  const [countRef, setCountRef] = useState(0);
+  // const [countRef, setCountRef] = useState(0);
   const [value, setValue] = useState(0);
+  const countRef = useRef(0)
+
+  console.log(countRef)
+
+  // useEffect(() => {
+  //   setCountRef(prev => prev+1)
+  // })
 
 
 
@@ -115,7 +122,7 @@ function App() {
       <button onClick={() => {setValue(prev => prev-1)}}>-1</button>
       <h1>{value}</h1>
       <button onClick={() => {setValue(prev => prev+1)}}>+1</button>
-
+      <h1>Render count: {countRef.current}</h1>
 
     </>
    
