@@ -91,9 +91,9 @@ function App() {
 
   console.log(countRef)
 
-  // useEffect(() => {
-  //   setCountRef(prev => prev+1)
-  // })
+  useEffect(() => {
+    countRef.current = countRef.current + 1;
+  })
 
 
 
