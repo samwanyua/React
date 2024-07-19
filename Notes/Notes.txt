@@ -33,3 +33,6 @@ useEffect
 - examples: fetching data from an API, directly updating DOM, timers like SetTimeOut and SetInterval
 
 
+useRef
+- allows us to create mutable variables which will not re-render the components
+- used also for accessing the DOM elements

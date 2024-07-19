@@ -65,8 +65,7 @@ function App() {
   // useEffect(() => {
   //   setTimeout(()=>{
   //     setCout((cout) => cout+1)
-  //   },2000)
-  // })
+  //   },2000) 
 
 
   // execute the callback function only once when the component gets loaded
@@ -83,6 +82,12 @@ function App() {
       setCout((cout) => cout+1)
     },2000)
   },[cout,name])    
+
+
+  // useRef
+  const [countRef, setCountRef] = useState(0);
+  const [value, setValue] = useState(0);
+
 
 
 
@@ -104,7 +109,14 @@ function App() {
       <button onClick={increaseCount}>Add</button>
       <button onClick={decreaseCount}>Remove</button> */}
 
-      <h1>I have rendered {cout} times</h1>
+      {/* <h1>I have rendered {cout} times</h1> */}
+
+      <h1>{value}</h1>
+
+      <button onClick={() => {setValue(prev => prev-1)}}>-1</button>
+      <button onClick={() => {setValue(prev => prev+1)}}>+1</button>
+
+
     </>
    
   );
