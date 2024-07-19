@@ -59,6 +59,7 @@ function App() {
   // useEffect(callback)
 
   const [cout, setCout] = useState(0);
+  const [name, setName] = useState('Sam');
 
   // useEffect without any dependencies - it executes callback function continously
   // useEffect(() => {
@@ -81,7 +82,7 @@ function App() {
     setTimeout(()=>{
       setCout((cout) => cout+1)
     },2000)
-  },[cout])    
+  },[cout,name])    
 
 
 
