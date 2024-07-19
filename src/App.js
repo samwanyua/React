@@ -111,9 +111,9 @@ function App() {
 
       {/* <h1>I have rendered {cout} times</h1> */}
 
-      <h1>{value}</h1>
 
       <button onClick={() => {setValue(prev => prev-1)}}>-1</button>
+      <h1>{value}</h1>
       <button onClick={() => {setValue(prev => prev+1)}}>+1</button>
 
 
