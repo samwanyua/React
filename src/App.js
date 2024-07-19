@@ -60,7 +60,7 @@ function App() {
 
   const [cout, setCout] = useState(0);
 
-  // useEffect without dependencies
+  // useEffect without any dependencies
   useEffect(() => {
     setTimeout(()=>{
       setCout((cout) => cout+1)
