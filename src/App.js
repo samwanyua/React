@@ -61,11 +61,19 @@ function App() {
   const [cout, setCout] = useState(0);
 
   // useEffect without any dependencies
+  // useEffect(() => {
+  //   setTimeout(()=>{
+  //     setCout((cout) => cout+1)
+  //   },2000)
+  // })
+
+
+  // execute the callback function only once when the component gets loaded
   useEffect(() => {
     setTimeout(()=>{
       setCout((cout) => cout+1)
     },2000)
-  })
+  },[])
 
 
 
