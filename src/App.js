@@ -1,9 +1,12 @@
 // src/App.js
 // import './App.css';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 function App() {
+
+  // useState
+
   const [counter, setCounter] = useState(0); // 0 is the initial value 
   // console.log(counter);
 
@@ -50,11 +53,30 @@ function App() {
     setCount((prev) => prev -1)
   }
 
+  // UseEffect
+  // useEffect(callback, [dependecy])
+  // useEffect(callback, [])
+  // useEffect(callback)
+
+  const [cout, setCout] = useState(0);
+
+  // useEffect without dependencies
+  useEffect(() => {
+    setTimeout(()=>{
+      setCout((cout) => cout+1)
+    },2000)
+  })
+
+
+
+
+
+
 
 
   return (
     <>
-      <h1>Hi, I am a Software {role}</h1>
+      {/* <h1>Hi, I am a Software {role}</h1>
       <button onClick={changeColor}>Hire me!</button>
 
       <h1>My {car.brand} </h1>
@@ -63,7 +85,9 @@ function App() {
 
       <h1>Count: {count} </h1>
       <button onClick={increaseCount}>Add</button>
-      <button onClick={decreaseCount}>Remove</button>
+      <button onClick={decreaseCount}>Remove</button> */}
+
+      <h1>I have rendered {cout} times</h1>
     </>
    
   );

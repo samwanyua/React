@@ -28,5 +28,8 @@ useState
 - creates a 'state variable' which helps us to track the state in components and updates
 in the user interface when the state changes.
 
+useEffect
+- allows you to perform side effects in your components
+- examples: fetching data from an API, directly updating DOM, timers like SetTimeOut and SetInterval
 
 
