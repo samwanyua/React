@@ -90,6 +90,8 @@ function App() {
   const countRef = useRef(0)
 
   console.log(countRef)
+  console.log(countRef)
+  console.log(countRef)
 
   useEffect(() => {
     countRef.current = countRef.current + 1;
