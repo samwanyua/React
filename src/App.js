@@ -69,11 +69,11 @@ function App() {
 
 
   // execute the callback function only once when the component gets loaded
-  // useEffect(() => {
-  //   setTimeout(()=>{
-  //     setCout((cout) => cout+1)
-  //   },2000)
-  // },[])
+  useEffect(() => {
+    setTimeout(()=>{
+      setCout((cout) => cout+1)
+    },2000)
+  },[])
 
 
   // whenever count changes it will again execute the callback function
