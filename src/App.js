@@ -77,11 +77,7 @@ function App() {
 
 
   // whenever count changes it will again execute the callback function
-  // useEffect(() => {
-  //   setTimeout(()=>{
-  //     setCout((cout) => cout+1)
-  //   },2000)
-  // },[cout,name])    
+    
 
 
   // useRef
