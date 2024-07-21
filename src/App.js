@@ -113,7 +113,7 @@ function App() {
       <button onClick={increaseCount}>Add</button>
       <button onClick={decreaseCount}>Remove</button> */}
 
-      {/* <h1>I have rendered {cout} times</h1> */}
+      <h1>I have rendered {cout} times</h1>
 
 
       <button onClick={() => {setValue(prev => prev-1)}}>-1</button>
